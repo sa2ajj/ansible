@@ -68,10 +68,14 @@ Options
 {% endif %}
 
 {% if requirements %}
+Requirements
+------------
+
+.. admonition:: Requires
+   :class: note
+
 {% for req in requirements %}
-
-.. note:: Requires @{ req | convert_symbols_to_format }@
-
+   * @{ req | convert_symbols_to_format }@
 {% endfor %}
 {% endif %}
 
